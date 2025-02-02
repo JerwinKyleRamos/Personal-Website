@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*============= NAV BAR ===============*/
+.navbar{
+  display: flex;
+  justify-content: flex-end;
+  border: 1px black solid;
+  height: 4rem;
+  background-color: black;
+}
+
+.navbar .nav-links{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+.navbar .nav-links a{
+  text-decoration: none;
+  color: white;
+}
+
+/*==============ABOUT ME=================*/
+.about_me{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+/*============PROFILE IMAGE=================*/
+.about_me .profile_image{
+  padding: 2rem 0rem 1rem 6rem;
+  position: relative;
+  z-index: 2;
+}
+
+.about_me .profile_text_container{
+  background-color: bisque;
+  height: 30rem;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3)
+}
+
+.about_me .profile_image img{
+  height: 700px;
+  width: 400px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)
+}
+
+/*============PROFILE DESCRIPTION=================*/
+.about_me .profile_text_container .profile_description{
+  width: 50%;
+  margin: 5rem 1rem 1rem 40rem;
+  border: 1px solid green;
+}
+
