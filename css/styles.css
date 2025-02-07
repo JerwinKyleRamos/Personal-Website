@@ -7,10 +7,15 @@
 /*============= NAV BAR ===============*/
 .navbar{
   display: flex;
-  justify-content: flex-end;
+  float: right;
   border: 1px black solid;
-  height: 4rem;
   background-color: black;
+  position: fixed;
+  height: 4rem;
+  z-index: 100;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 1rem 0 2rem;
 }
 
 .navbar .nav-links{
@@ -26,14 +31,23 @@
 .navbar .nav-links a{
   text-decoration: none;
   color: white;
+  padding: 4rem 1rem;
+  display: block; 
 }
 
-/*==============ABOUT ME=================*/
+.navbar .nav-links a:hover{
+  background-color: white;
+  color: black;
+}
+
+
+/*==============ABOUT ME PAGE=================*/
 .about_me{
   display: flex;
   flex-direction: row;
   align-items: center;
   position: relative;
+  padding: 5rem 0;
 }
 
 /*============PROFILE IMAGE=================*/
@@ -65,3 +79,30 @@
   border: 1px solid green;
 }
 
+/*============HOBBIES PAGE================*/
+.hobbies{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ place-items: center;
+ gap: 4rem;
+ padding-top: 4rem;
+ background-color: #f4f4f4;
+}
+
+.hobbies .hobbies_header h1{
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+
+.hobbies img{
+  height: 600px;
+  width: 650px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobbies img:hover{
+  transform: scale(1.05);
+}
